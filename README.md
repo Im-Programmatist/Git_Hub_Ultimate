@@ -41,8 +41,8 @@
 #  $ git add -A 
 **---> Add all file in stagging --modified as well as newly created**
 
-#  $ .gitignore (*.log this means all file with log extension ignore) 
-**---> Excluding/Ignoring File**
+#  $ .gitignore 
+**---> Excluding/Ignoring File (*.log this means all file with log extension ignore)**
 
 #  $ git diff last-sha/branch-name
 **---> This will compaire last provided SHA commit with current**
@@ -77,7 +77,7 @@
 #  $ git stash list
 **---> This will shows stashes created**
 
-#  $ git shash 
+#  $ git stash 
 **--->  It will save working directory and file, index(head pointer) state, save your work in progress. By default, git stash stores (or "stashes") the uncommitted changes (staged and unstaged files) and overlooks untracked and ignored files. Working branch and directory will be clean**
 
 #  $ git stash -u or git stash --include-untracked 
@@ -93,7 +93,7 @@
 **---> This will pop out top index from stash stack**
 
 #  $ git rest SHA --soft
-**---> It will reset with soft**
+**---> It will reset with soft, here SHA is commit code**
 
 #  $ git branch <new-branch-name> be64979
 **---> This will create new branch with provided SHA**
@@ -106,24 +106,3 @@
 
 #  $ git 
 **--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->**
-
-#  $ git 
-**--->
