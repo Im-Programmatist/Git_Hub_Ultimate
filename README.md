@@ -102,10 +102,16 @@
 **---> This will give log shows commit id but reflog shows action all done in repository like merge, checkout, push etc**
 
 #  $ ssh-keygen -t  rsa  -C "email_id" 
-**---> use email id which is set as username on github , it will create id_rsa and id_rsa.pub file then open public key and copy all containt**
+**---> use email id which is set as username on github , it will create id_rsa and id_rsa.pub file then open public key and copy all contains**
 
 #  $ git config --get remote.origin.url
 **---> Get http url of repository** 
 
 #  $ git remote -v 
 **---> To check the remote host available in git config** 
+
+#  $ git push --delete origin test2
+**--->This command will delete branch from remote, git branch -d will delete from local only** 
+
+#  $ git cherry-pick SHA(from feature branch from where we want to cherry-pick)
+**--->This command will pick selected sha(commit) from other branch like feature branch and then put it on current branch(must be in branch where we wanted to add new commit from other branch)** 
