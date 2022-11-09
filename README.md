@@ -2,8 +2,8 @@
 #  $ git init 
 **---> inititiate git in working directory**
 
-#  $ git remote add origin "htts://dcdv.f" 
-**---> this will add remote repository origin to your git folder configuration**
+#  $ git remote add origin(custom name) "htts://dcdv.f" 
+**---> this will add remote repository origin to your git folder configuratio, using this this command we can add multiple remote with different origin name like -origin,testorigin etc**
 
 #  $ git remote -v 
 **---> shows all the remote origin list(git provide 2 url one for push and one for fetch but 99% time both url same  )**
