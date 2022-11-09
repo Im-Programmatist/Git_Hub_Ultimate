@@ -111,7 +111,7 @@
 **---> To check the remote host available in git config** 
 
 #  $ git push --delete origin test2
-**--->This command will delete branch from remote, git branch -d will delete from local only** 
+**--->This command will delete branch from remote, 'git branch -d branch_name' Or  'git branch -D branch_name'(force delete without merging with other branch) will delete from local only** 
 
 #  $ git cherry-pick SHA(from feature branch from where we want to cherry-pick)
 **--->This command will pick selected sha(commit) from other branch like feature branch and then put it on current branch(must be in branch where we wanted to add new commit from other branch)** 
