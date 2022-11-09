@@ -33,7 +33,7 @@
 **---> it will rename file**
 
 #  $ git rm demo.txt
-**---> remove file **
+**---> remove file**
 
 #  $ git add -u 
 **---> This will add updated file in stagging**
@@ -104,6 +104,8 @@
 #  $ ssh-keygen -t  rsa  -C "email_id" 
 **---> use email id which is set as username on github , it will create id_rsa and id_rsa.pub file then open public key and copy all containt**
 
-#  $ git 
-**--->**
+#  $ git config --get remote.origin.url
+**---> Get http url of repository** 
 
+#  $ git remote -v 
+**---> To check the remote host available in git config** 
