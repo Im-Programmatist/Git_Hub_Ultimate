@@ -116,5 +116,7 @@
 #  $ git cherry-pick SHA(from feature branch from where we want to cherry-pick)
 **--->This command will pick selected sha(commit) from other branch like feature branch and then put it on current branch(must be in branch where we wanted to add new commit from other branch)** 
 
+# $ git push all --all
+**---> This command will push code to all remotes**
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
