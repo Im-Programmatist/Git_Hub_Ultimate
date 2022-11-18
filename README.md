@@ -1,6 +1,6 @@
-
+## Git common Used Commands
 #  $ git init 
-**---> inititiate git in working directory**
+**---> initiate git in working directory**
 
 #  $ git remote add origin(custom name) "htts://dcdv.f" 
 **---> this will add remote repository origin to your git folder configuratio, using this this command we can add multiple remote with different origin name like -origin,testorigin etc**
@@ -118,5 +118,23 @@
 
 # $ git push all --all
 **---> This command will push code to all remotes**
+
+# $ git config core.fileMode false
+**---> This command will not send file permission(sudo or 777) to remote repository with push**
+
+## Version Tags Related Command
+# $ git tag -a v1.0 SHA_of_commit_to_which_connect
+**--->Create annotation Tag**
+# $ git tag -d v1.0
+**--->Delete Tag**
+# $ git pull origin --tags
+**--->Pull Tags From Remote**
+# $ git push origin --tags
+**--->Push all created tag (new should not exist on remote)**
+# $ git tag -n 
+**--->See git tags list**
+# $ git show v1.0
+**--->Show All details of tag with commit attached**
+
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
