@@ -136,5 +136,9 @@
 # $ git show v1.0
 **--->Show All details of tag with commit attached**
 
+## Error like - GIT BASH - error: pathspec '…' did not match any file(s) known to git
+# $ git remote update
+# $ git fetch 
+# $ git checkout --track origin/<BRANCH-NAME>
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
