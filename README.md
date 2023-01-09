@@ -123,6 +123,7 @@
 **---> This command will not send file permission(sudo or 777) to remote repository with push**
 
 ## Version Tags Related Command
+
 # $ git tag -a v1.0 SHA_of_commit_to_which_connect
 **--->Create annotation Tag**
 # $ git tag -d v1.0
@@ -143,3 +144,5 @@
 
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
+
+
