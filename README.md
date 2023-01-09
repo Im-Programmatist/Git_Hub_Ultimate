@@ -110,6 +110,10 @@
 #  $ git remote -v 
 **---> To check the remote host available in git config** 
 
+
+#  $ git remote show
+**---> This will show remote origin name** 
+
 #  $ git push --delete origin test2
 **--->This command will delete branch from remote, 'git branch -d branch_name' Or  'git branch -D branch_name'(force delete without merging with other branch) will delete from local only** 
 
@@ -118,6 +122,9 @@
 
 # $ git push all --all
 **---> This command will push code to all remotes**
+
+# $ git remote set-url origin git@github.com:Im-Programmatist/Git_Hub_Ultimate.git
+**---> This command will clone using SSH url**
 
 # $ git config core.fileMode false
 **---> This command will not send file permission(sudo or 777) to remote repository with push**
