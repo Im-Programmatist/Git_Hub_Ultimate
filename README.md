@@ -86,7 +86,8 @@
 #  $ git checkout -b branch-name
 **---> This will create new branch**
 
-#  $ git tag mytag
+## TAGS
+#  $ git tag mytag OR $ git tag mytag branch-name
 **---> This will create git tags**
 
 #  $ git tag -d mytag
