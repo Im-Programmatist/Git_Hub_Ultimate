@@ -86,9 +86,16 @@
 #  $ git checkout -b branch-name
 **---> This will create new branch**
 
-## TAGS
+## TAGS - Tags are check points, tags never push directly to remote we have to specifically push it 
+
 #  $ git tag mytag OR $ git tag mytag branch-name
 **---> This will create git tags**
+
+# $ git push origin tag_name
+**---> push tags to remote**
+
+# $ git push --tags
+**---> push all the tags simultaneously to the remote**
 
 #  $ git tag -d mytag
 **---> This will delete tag**
@@ -98,6 +105,11 @@
 
 #  $ git show v1.0
 **---> This command shows tag and date code and commit message associated with tag, help to know major milestone**
+
+#  $ git tag -f v1.0 SHA (changed SHA)
+**---> This will update tag SHA**
+
+## STASH 
 
 #  $ git stash list
 **---> This will shows stashes created**
