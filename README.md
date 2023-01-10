@@ -3,7 +3,7 @@
 **---> initiate git in working directory**
 
 #  $ git remote add origin(custom name) "htts://dcdv.f" 
-**---> this will add remote repository origin to your git folder configuratio, using this this command we can add multiple remote with different origin name like -origin,testorigin etc**
+**---> this will add remote repository origin to your git folder configuration, using this this command we can add multiple remote with different origin name like -origin,test origin etc**
 
 #  $ git remote -v 
 **---> shows all the remote origin list(git provide 2 url one for push and one for fetch but 99% time both url same  )**
@@ -35,6 +35,9 @@
 #  $ git rm demo.txt
 **---> remove file**
 
+#  $ gitk
+**---> This command will display all logs in graph**
+
 #  $ git add -u 
 **---> This will add updated file in stagging**
 
@@ -53,11 +56,32 @@
 #  $ git checkout master
 **---> This will checkout/switch to master branch**
 
-#  $ git merge branch-name
-**---> This will be a fast forward mnerge all commits from (from)branch will be merge and head will point to curent branch(where in to merge)**
+# $ git switch -c developer OR $ git switch -c developer  master
+**---> This will create new branch developer(from master)**
+
+# $  git commit --allow-empty -m "added empty commit message even no changes done"
+**---> This will add commit even it doent have changes made and git add done** 
+
+#  $ git merge branch-name OR $ git merge --ff branch-name (fast forward merging)
+**---> This will be a fast forward merge all commits from (target)branch will be merge with destination branch(current) and head will point to current branch(where in to merge), no merge point commit added by git, if we provided any message with merge command it will be ignored**
+
+# $ git merge --no-ff branch-name 
+**---> This will be a no fast forward merge, all commits from (target)branch will be merge with destination branch(current)  with commit of merge point added by git or we provided any message with merge command while merging**
+
+# $ git merge --squash branch-name 
+**--->This command squshes all the commits from branch which is being merge in one commit, After this command we will get automatic merge went well message may with stooed before commiting then we have to run git commit -m "message " command after above command.**
+
+## If first time branch merge with --no-ff then it will be ignore git merge -ff 
 
 #  $ git branch -d branch -name
 **--->This will delete branch**
+
+#  $ git pull --rebase
+**--->Suppose we have made sa=ome changes locally and wanted to keep it on top on all the changes coming from remote then, instead of using git pull (it will merge remote changes and local changes) use rebase, For rebase remote branch will be base and our local changes will be place over it**
+
+
+#  $ git push origin :branch-name
+**--->This will delete branch from remote git console, run this command after delete branch from locally**
 
 #  $ git checkout -b branch-name
 **---> This will create new branch**
@@ -112,7 +136,7 @@
 
 
 #  $ git remote show
-**---> This will show remote origin name** 
+**---> This will show name of remote origin** 
 
 #  $ git push --delete origin test2
 **--->This command will delete branch from remote, 'git branch -d branch_name' Or  'git branch -D branch_name'(force delete without merging with other branch) will delete from local only** 
@@ -126,8 +150,17 @@
 # $ git remote set-url origin git@github.com:Im-Programmatist/Git_Hub_Ultimate.git
 **---> This command will clone using SSH url**
 
+# $ git branch --set-upstream-to=origin/<branch> developer
+**---> If you wish to set tracking information for this branch you can do so with above command**    
+
+# $ git config --global push.default current OR $ git push -f --set-upstream origin master
+**---> The current branch master has no upstream branch error can resolve and make default branch to push pull, after this command we need just git pull/push**
+
 # $ git config core.fileMode false
 **---> This command will not send file permission(sudo or 777) to remote repository with push**
+
+# $ git config --global -e
+**---> Show all global default config setting**
 
 ## Version Tags Related Command
 
@@ -148,6 +181,44 @@
 # $ git remote update
 # $ git fetch 
 # $ git checkout --track origin/<BRANCH-NAME>
+
+# $ git rebase <branch name> OR git rebase -i 
+**(here i for interactive and no need to specify branch beacuse we are on current branch ) Rebase - It is an alternative of git merge command. It is a linear process of merging.In Git, the term rebase is referred to as the process of moving or combining a sequence of commits to a new base commit. Merge merges all commits as a single commit where as rebase creates a linear track of commits.**
+
+# $ git rebase --continue  
+**---> The above command is used to continue with the changes you made.**
+# $ git rebase --skip  
+**---> If you want to skip the change, you can skip**
+# $ git rebase --quit  
+**---> If you want to quit the rebase**
+
+**Merging integrates the content of the feature branch with the master branch. So, the master branch is changed, and feature branch history remains consistence.	Rebasing of the master branch may affect the feature branch. Merging preserves history.	Rebasing rewrites history. Git merge presents all conflicts at once.	Git rebase presents conflicts one by one.**
+
+# after rebase SHA change but commit changes not vanishes
+
+## Stash - to store changes and go back to previous commit, it will store all changes aside.
+# $ git stash 
+**---> This command will store recent changes and go back to last/previous commit**
+
+# $ git stash apply
+**---> It will apply all stored changes in stash to current stage, It will apply latest stash changes from list**
+# $ git stash apply 1/2/3 (number from stash list)
+**---> This will apply stage changes according to number in stash list**
+
+# $ git stash list
+**---> It will show list of all stash stages we have kept aside**
+
+# $ git stash clear
+**--->stash list will be clear from here**
+
+# $ git stash push -m "added description to identify stage changes"
+
+# $ git stash pop 1
+**---> Popup 1 index stash saved changes**
+
+## If we add and commit pop up stash changes then it automatically removed from stash list
+
+# $ git stash drop 2 (index number in stash list) - delete stash in list 
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
 
