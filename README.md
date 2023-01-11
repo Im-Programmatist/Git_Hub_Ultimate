@@ -1,5 +1,5 @@
 ## Git common Used Commands
-#  $ git init 
+###  $ git init 
 **---> initiate git in working directory**
 
 #  $ git remote add origin(custom name) "htts://dcdv.f" 
