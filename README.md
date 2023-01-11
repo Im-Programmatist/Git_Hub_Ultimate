@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ## Git Commonly Used Commands
 
-=======
-## Git common Used Commands
->>>>>>> 5d78efae5f89f8f6e3662715d2bce7d41c36f98d
 ###  $ git init 
 **---> initiate git in working directory**
 
