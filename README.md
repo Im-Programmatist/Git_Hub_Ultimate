@@ -13,19 +13,19 @@
 **---> shows the changes in last commit**
 
 ###  $ git ls-files
-**---> it will track only modified file in stagging not new file**
+**---> it will track only modified file in staging not new file**
 
 ###  $ git reset HEAD README.md
-**---> This will reset file from git stagging even if it is git added, but shows in modified**
+**---> This will reset file from git staging even if it is git added, but shows in modified**
 
 ###  $ git checkout --README.md
 **---> This will reset file and remove all the changes done in file and not track ads modified(modified file if add in stagged state then it get removed)**
 
 ###  $ git log --oneline --graph --decorate --all
-**---> it will provide online info, with asterik based graph(branching heirarchy), decorate give colorful branch, all will provide history of all branches**
+**---> it will provide online info, with asterisk based graph(branching hierarchy), decorate give colorful branch, all will provide history of all branches**
 
 ###  $ git config --global alias.history "log --oneline --graph --decorate --all"
-**---> this will create new custom command for git log with global scope and oneline,graph etc like feature inbuild**
+**---> this will create new custom command for git log with global scope and oneline,graph etc like feature in build**
 
 ###  $ git config --global --list
 **---> This wil give us list of global commands**
@@ -164,7 +164,9 @@
 **--->This command will delete branch from remote, 'git branch -d branch_name' Or  'git branch -D branch_name'(force delete without merging with other branch) will delete from local only** 
 
 ###  $ git cherry-pick SHA(from feature branch from where we want to cherry-pick)
-**--->This command will pick selected sha(commit) from other branch like feature branch and then put it on current branch(must be in branch where we wanted to add new commit from other branch)** 
+**--->This command will pick selected sha(commit) from other branch like feature branch and then put it on current branch(must be in branch where we wanted to add new commit from other branch) It is contrast to merge or rebase where all commits attach to new branch where as cherry pick do it for only 1** 
+**If you have notes attached to the commit they do not follow the cherry-pick. To bring them over as well, You have to use: $ git notes copy <from> <to>**
+
 
 ###  $ git push all --all
 **---> This command will push code to all remotes**
