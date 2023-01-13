@@ -157,7 +157,7 @@
 ###  $ git remote -v 
 **---> To check the remote host available in git config** 
 
-###  $ git remote show
+###  $ git remote show OR $ git remote
 **---> This will show name of remote origin** 
 
 ###  $ git push --delete origin test2
