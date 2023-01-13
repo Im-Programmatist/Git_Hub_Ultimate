@@ -273,8 +273,3 @@
 **---> This will attach commit with issue on git lab and close it**
 
 ### https://dev.to/stefant123/basic-git-commands-explained-1cjd#remote-add
-
-  
-##Remote change to check fetch and pull deference
-  
-##2
