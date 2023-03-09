@@ -15,6 +15,9 @@
 ###  $ git ls-files
 **---> it will track only modified file in staging not new file**
 
+### $ git restore --staged <file>
+**---> to unstage any file which is added in git stage by git add .**
+
 ###  $ git reset HEAD README.md
 **---> This will reset file from git staging even if it is git added, but shows in modified**
 
