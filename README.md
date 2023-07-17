@@ -83,6 +83,10 @@
 ###  $ git branch -d branch -name
 **--->This will delete branch**
 
+### git branch -m <old_name> <new_name>
+**--->Rename the local branch to the new name**
+
+
 ###  $ git pull --rebase
 **--->Suppose we have made sa=ome changes locally and wanted to keep it on top on all the changes coming from remote then, instead of using git pull (it will merge remote changes and local changes) use rebase, For rebase remote branch will be base and our local changes will be place over it**
 
